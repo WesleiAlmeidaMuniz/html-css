@@ -1,0 +1,13 @@
+body{
+    background-color: #4E598C;
+    color:#FF8C42;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    font-size: 20px;
+    color:#FF8C42;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
