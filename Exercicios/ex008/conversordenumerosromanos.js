@@ -1,6 +1,6 @@
 function conversor (number){
-    const num = ['D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
-    const contaValor = [500,400,100,90,50,40,10,9,5,4,1]
+    const num = ['M','D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+    const contaValor = [1000,500,400,100,90,50,40,10,9,5,4,1]
 
     let soma = number
     let result = ''
@@ -11,10 +11,10 @@ function conversor (number){
                 result += num[i]
                 i = 0
             }
-        }  
+        }
     }
     
     return result
 }
 
-console.log(conversor(135));
+console.log(conversor(1543));

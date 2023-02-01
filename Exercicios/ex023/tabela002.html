@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black ;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: darkcyan;
+        }
+
+        .numero, .resultado{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead , tfoot{
+            background-color: rgb(72, 72, 72);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(72, 72, 72) ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45919049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21168791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17264943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14873064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11433957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11377239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9557071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">9132078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8602865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7164788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">7075181</td>
+            </tr>
+            <tr>
+                <td>Góias</td>
+                <td class="numero">7018354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">4144597</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="numero">4018650</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="numero">4016127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3506853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3484466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3337357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3273227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">3015268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2778986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2298696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1777225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1572866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">881935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">845731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">605761</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="resultado"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
